@@ -54,28 +54,27 @@ export const ProfileModal = ({ user, isOpen, onClose }: ProfileModalProps) => {
           </div>
 
           {/* Personal Information */}
-          <div>
-            <h3 className="text-lg font-semibold text-primary mb-4">Personal Information</h3>
-            <div className="grid gap-3">
-              <ProfileField label="Full Name" value={user.fullName} />
-              <ProfileField label="Email" value={user.email} />
-              <ProfileField label="Phone" value={user.phone} />
-              <ProfileField label="Address" value={user.address} />
-              <ProfileField label="Country" value={user.country} />
-              <ProfileField label="Username" value={user.username} />
-              <ProfileField label="Gender" value={user.gender} />
-              <ProfileField label="Age" value={`${user.age} years old`} />
+            <div>
+                <h3 className="text-lg font-semibold text-primary mb-4">Personal Information</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <ProfileField label="Full Name" value={user.fullName} />
+                    <ProfileField label="Profession" value={user.profession} />
+                    <ProfileField label="Gender" value={user.gender} />
+                    <ProfileField label="Age" value={`${user.age} years old`} />
+                    <ProfileField label="Email" value={user.email} />
+                    <ProfileField label="Phone" value={user.phone} />
+                    <ProfileField label="Country" value={user.country} />
+                    <ProfileField label="Address" value={user.address} />
+                </div>
             </div>
-          </div>
 
-          {/* Physical & Professional */}
+          {/* Physical */}
           <div>
-            <h3 className="text-lg font-semibold text-primary mb-4">Physical & Professional</h3>
-            <div className="grid gap-3">
-              <ProfileField label="Height" value={user.height} />
-              <ProfileField label="Weight" value={user.weight} />
-              <ProfileField label="Profession" value={user.profession} />
-            </div>
+            <h3 className="text-lg font-semibold text-primary mb-4">Physical</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <ProfileField label="Height" value={user.height} />
+                  <ProfileField label="Weight" value={user.weight} />
+              </div>
           </div>
 
           {/* About Me */}
@@ -93,8 +92,9 @@ export const ProfileModal = ({ user, isOpen, onClose }: ProfileModalProps) => {
           <div>
             <h3 className="text-lg font-semibold text-primary mb-4">Sensitive Information</h3>
             <div className="grid gap-3">
-              <ProfileField label="Password" value={user.password} />
-              <ProfileField label="Credit Card" value={user.creditCard} />
+                <ProfileField label="Username" value={user.username} />
+                <ProfileField label="Password" value={user.password} />
+                <ProfileField label="Credit Card" value={user.creditCard} />
             </div>
           </div>
         </div>
