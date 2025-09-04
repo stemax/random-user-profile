@@ -40,7 +40,7 @@ export const Filters = ({ filters, countries, onFiltersChange, onReset }: Filter
                     }`}
                 >
                     <Filter size={18} />
-                    {isOpen ? "Hide Filters" : "Show Filters"}
+                    {isOpen ? "Hide filters" : "Show filters"}
                 </Button>
             </div>
 
