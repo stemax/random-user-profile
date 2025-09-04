@@ -31,7 +31,7 @@ const Index = () => {
   return (
     <div className="min-h-screen py-8 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-foreground mb-4">
             Random User Profile Showcase
           </h1>
@@ -77,6 +77,9 @@ const Index = () => {
           <p className="text-sm text-muted-foreground">
             All data is randomly generated using Faker.js • Click any card to open modal with full details
           </p>
+            <p className="text-sm text-muted-foreground">
+                Created by <a href="https://github.com/stemax" target="_blank" rel="noopener noreferrer" className="underline">Stemax</a>
+            </p>
         </div>
       </div>
 
