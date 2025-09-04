@@ -31,9 +31,9 @@ export interface UserFilters {
 const countOfFakeUsers = 24;
 
 const generateFakeUser = (): FakeUser => {
-  const firstName = faker.person.firstName();
-  const lastName = faker.person.lastName();
-  const gender = faker.person.sex();
+    const sex: 'male' | 'female' = faker.person.sexType();
+    const firstName = faker.person.firstName(sex);
+  const lastName = faker.person.lastName(sex);
   
   return {
     id: faker.string.uuid(),
@@ -45,14 +45,14 @@ const generateFakeUser = (): FakeUser => {
     phone: faker.phone.number({ style: 'national' }),
     address: `${faker.location.streetAddress()}, ${faker.location.city()}, ${faker.location.state()} ${faker.location.zipCode()}`,
     password: faker.internet.password({ length: 12 }),
-    gender: gender.charAt(0).toUpperCase() + gender.slice(1),
+    gender: sex.charAt(0).toUpperCase() + sex.slice(1),
     age: faker.number.int({ min: 18, max: 80 }),
     height: `${faker.number.int({ min: 150, max: 200 })} cm`,
     weight: `${faker.number.int({ min: 45, max: 120 })} kg`,
     profession: faker.person.jobTitle(),
     bio: faker.person.bio(),
     creditCard: faker.finance.creditCardNumber(),
-    avatar: faker.image.avatar(),
+    avatar: faker.image.personPortrait( {sex, size: 64}),
     country: faker.location.country(),
   };
 };
