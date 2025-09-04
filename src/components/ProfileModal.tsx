@@ -3,11 +3,8 @@ import { CopyButton } from './CopyButton';
 import {
     Dialog,
     DialogContent,
-    DialogHeader,
-    DialogTitle,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { Download } from 'lucide-react';
 
 interface ProfileModalProps {
     user: FakeUser | null;

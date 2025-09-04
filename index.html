@@ -1,24 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random user profile generator</title>
-    <meta name="description" content="Random user profile generator" />
-    <meta name="author" content="stemax" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <meta property="og:title" content="Random user profile generator" />
-    <meta property="og:description" content="Random user profile generator" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/2697561?s=48&v=4" />
+    <!-- SEO -->
+    <title>Random User Profile Generator | Fake Profiles Showcase</title>
+    <meta
+            name="description"
+            content="Generate random user profiles with avatars, names, emails, addresses, and more. Filter by gender, country, and age instantly!"
+    />
+    <meta name="author" content="Stemax"/>
+    <meta
+            name="keywords"
+            content="random user generator, fake profile, fake user data, random avatar, user showcase, test data generator, profile generator"
+    />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@stemax" />
-    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/2697561?s=48&v=4" />
-  </head>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Random User Profile Generator"/>
+    <meta
+            property="og:description"
+            content="Discover randomly generated user profiles with avatars, personal info, and export to JSON."
+    />
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/2697561?s=48&v=4"/>
+    <meta property="og:url" content="https://random-user-profile-eta.vercel.app/"/>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@stemax"/>
+    <meta name="twitter:title" content="Random User Profile Generator"/>
+    <meta
+            name="twitter:description"
+            content="Generate and explore fake user profiles with avatars, names, emails, and more."
+    />
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/2697561?s=48&v=4"/>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Random User Profile Generator",
+            "url": "https://random-user-profile-eta.vercel.app/",
+            "description": "A tool to generate and explore fake user profiles with filters and export options.",
+            "applicationCategory": "Utility",
+            "operatingSystem": "All",
+            "creator": {
+                "@type": "Person",
+                "name": "Stemax",
+                "url": "https://github.com/stemax"
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+</body>
 </html>
