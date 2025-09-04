@@ -1,7 +1,7 @@
 # Random user profile generator (project)
 
-Demo here: https://random-user-profile-eta.vercel.app/
-
+Demo here: [https://random-user-profile-eta.vercel.app/
+](https://random-user-profile-generator.vercel.app/)
 ## Project info
 
 Follow these steps:
